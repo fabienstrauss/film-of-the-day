@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "catalog:seed": "tsx --conditions=react-server scripts/seed-catalog.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.2.0",

@@ -4,6 +4,10 @@ const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  images: {
+    loader: "custom",
+    loaderFile: "./src/lib/tmdb/image-loader.ts",
+  },
   turbopack: {
     rules: {
       "*.css": {
